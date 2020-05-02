@@ -6,7 +6,7 @@ const Filter = ({ value, onChangeFilter }) => (
     <span> Find contacts by name </span>
     <input
       type="text"
-      name="filter"
+      // name="filter"
       value={value}
       onChange={onChangeFilter}
       placeholder="Type to filter tasks..."

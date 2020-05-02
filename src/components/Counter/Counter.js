@@ -25,8 +25,8 @@ export default class Counter extends Component {
     notifocations: false,
   };
 
-  hendelIncrementStatistick = ({ target }) => {
-    const { name } = target;
+  hendelIncrementStatistick = name => {
+    // const { name } = target;
     this.setState(state => ({
       [name]: state[name] + this.props.step,
     }));

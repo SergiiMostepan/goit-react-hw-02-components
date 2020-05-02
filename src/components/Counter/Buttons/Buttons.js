@@ -3,13 +3,13 @@ import styles from './Buttons.module.css';
 
 const Buttons = ({ type, onIncrementStatistick }) => (
   <div className={styles.buttonSection}>
-    <button type={type} name="good" onClick={onIncrementStatistick}>
-      Goog
+    <button type={type} onClick={() => onIncrementStatistick('good')}>
+      Good
     </button>
-    <button type={type} name="neutral" onClick={onIncrementStatistick}>
+    <button type={type} onClick={() => onIncrementStatistick('neutral')}>
       Neutral
     </button>
-    <button type={type} name="bad" onClick={onIncrementStatistick}>
+    <button type={type} onClick={() => onIncrementStatistick('bad')}>
       Bad
     </button>
   </div>
